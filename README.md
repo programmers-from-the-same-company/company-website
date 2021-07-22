@@ -13,6 +13,8 @@ To start development:
 7) Wait for a review and resolve conversations. You may want to assign reviewers to your pr, you can always assign me ted-marozzi.
 8) Squash and merge to master.
 
+You won't see your changes in the deployment until an admin deploys, we will be changing that soon to deploy on push to master.
+
 Note: If you are new to git, I recommend installing [Github Desktop](https://desktop.github.com/)
 ## Available Scripts
 
