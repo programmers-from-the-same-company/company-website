@@ -8,11 +8,12 @@ To start development:
 2) Pick or create a ticket in the ToDo project and move it to in progress
 3) Ensure you have an up to date version of Node.js installed. See [Here](https://nodejs.org/en/)
 4) Make changes locally (you may need to ```yarn install``` the first time I am not sure)
-5) commit
-6) Create a pr to master
+5) Commit and Push your branch to the repo.
+6) Create a pr to master.
 7) Wait for a review and resolve conversations.
 8) Squash and merge to master.
 
+Note: If you are new to git, I recommend installing [Github Desktop](https://desktop.github.com/)
 ## Available Scripts
 
 In the project directory, you can run:
