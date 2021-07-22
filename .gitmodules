@@ -1,0 +1,3 @@
+[submodule "company-website-hosting"]
+	path = company-website-hosting
+	url = https://github.com/programmers-from-the-same-company/company-website-hosting.git
