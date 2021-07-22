@@ -10,7 +10,7 @@ To start development:
 4) Make changes locally (you may need to ```yarn install``` the first time I am not sure)
 5) Commit and Push your branch to the repo.
 6) Create a pr to master.
-7) Wait for a review and resolve conversations.
+7) Wait for a review and resolve conversations. You may want to assign reviewers to your pr, you can always assign me ted-marozzi.
 8) Squash and merge to master.
 
 Note: If you are new to git, I recommend installing [Github Desktop](https://desktop.github.com/)
