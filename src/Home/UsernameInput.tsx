@@ -1,6 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 function UsernameInput() {
+    const [username, setUsername] = useState("");
+    const [apiResponse, setApiResponse] = useState("");
+    const [currentMembers, setCurrentMembers] = useState(["ee", "fsd"]);
+    const [pendingMembers, setPendingMembers] = useState(["ads","asdf"]);
+
+    const sendInvitation = async () => {
+        // Call our api to send invitation to user.
+        // Set api response
+    }
+
+    const makeListItem = (member: string) => {
+        return <li>{member}</li>;
+    }
+
+    // OnMount
+    useEffect(() => {
+        // Call api to get current members and set set state
+        // Call api to get pending invitation and set state
+        // Would be nice to sort by time stamp if not too hard
+        },[]);
+
     return (
         <div className="container">
             <h2 className="text-center m-2">
@@ -9,14 +30,33 @@ function UsernameInput() {
             <form className="text-center">
                 <input
                     type="text"
-                    className="form-control m-2"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    className="form-control m-2 w-50 text-center mx-auto"
                 />
                 <button
+                    onClick={(e) => sendInvitation()}
                     className="btn btn-outline-success"
                 >
                     Send Invitation
                 </button>
             </form>
+            <div className="row m-5">
+                <div className="col text-center">
+                    <h2>Current Members</h2>
+                    <ul className="list-unstyled">
+                        {currentMembers.map(makeListItem)}
+                    </ul>
+                </div>
+                <div className="col text-center">
+                    <h2>Pending Invitations</h2>
+                    <ul className="list-unstyled">
+                        {pendingMembers.map(makeListItem)}
+                    </ul>
+                </div>
+
+
+            </div>
         </div>
     );
 }

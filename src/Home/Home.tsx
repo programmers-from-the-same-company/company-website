@@ -10,9 +10,9 @@ function Home() {
            from the same company
         </h1>
       </header>
-      <body className="row align-self-center">
+      <div className="row align-self-center">
           <UsernameInput/>
-      </body>
+      </div>
     </div>
   );
 }
