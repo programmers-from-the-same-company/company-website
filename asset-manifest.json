@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/company-website/static/css/main.a617e044.chunk.css",
-    "main.js": "/company-website/static/js/main.e3da2251.chunk.js",
-    "main.js.map": "/company-website/static/js/main.e3da2251.chunk.js.map",
-    "runtime-main.js": "/company-website/static/js/runtime-main.4d353dc1.js",
-    "runtime-main.js.map": "/company-website/static/js/runtime-main.4d353dc1.js.map",
-    "static/js/2.1c1f81ab.chunk.js": "/company-website/static/js/2.1c1f81ab.chunk.js",
-    "static/js/2.1c1f81ab.chunk.js.map": "/company-website/static/js/2.1c1f81ab.chunk.js.map",
-    "static/js/3.bd50fb9c.chunk.js": "/company-website/static/js/3.bd50fb9c.chunk.js",
-    "static/js/3.bd50fb9c.chunk.js.map": "/company-website/static/js/3.bd50fb9c.chunk.js.map",
+    "main.css": "/company-website/static/css/main.83b315e1.chunk.css",
+    "main.js": "/company-website/static/js/main.9c2f2eb1.chunk.js",
+    "main.js.map": "/company-website/static/js/main.9c2f2eb1.chunk.js.map",
+    "runtime-main.js": "/company-website/static/js/runtime-main.0f442fae.js",
+    "runtime-main.js.map": "/company-website/static/js/runtime-main.0f442fae.js.map",
+    "static/css/2.455652b6.chunk.css": "/company-website/static/css/2.455652b6.chunk.css",
+    "static/js/2.b612ac70.chunk.js": "/company-website/static/js/2.b612ac70.chunk.js",
+    "static/js/2.b612ac70.chunk.js.map": "/company-website/static/js/2.b612ac70.chunk.js.map",
+    "static/js/3.b7408db0.chunk.js": "/company-website/static/js/3.b7408db0.chunk.js",
+    "static/js/3.b7408db0.chunk.js.map": "/company-website/static/js/3.b7408db0.chunk.js.map",
     "index.html": "/company-website/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/company-website/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.1c1f81ab.chunk.js.LICENSE.txt": "/company-website/static/js/2.1c1f81ab.chunk.js.LICENSE.txt"
+    "static/css/2.455652b6.chunk.css.map": "/company-website/static/css/2.455652b6.chunk.css.map",
+    "static/css/main.83b315e1.chunk.css.map": "/company-website/static/css/main.83b315e1.chunk.css.map",
+    "static/js/2.b612ac70.chunk.js.LICENSE.txt": "/company-website/static/js/2.b612ac70.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d353dc1.js",
-    "static/js/2.1c1f81ab.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.e3da2251.chunk.js"
+    "static/js/runtime-main.0f442fae.js",
+    "static/css/2.455652b6.chunk.css",
+    "static/js/2.b612ac70.chunk.js",
+    "static/css/main.83b315e1.chunk.css",
+    "static/js/main.9c2f2eb1.chunk.js"
   ]
 }
