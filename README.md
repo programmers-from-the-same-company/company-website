@@ -1,7 +1,21 @@
-# Getting Started with Create React App
+# [Company Website](https://www.facebook.com/groups/552915499081788)
+This is our typescript React based Company website.
+It is deployed via the gh-pages branch via a command run by admins.
+The deployment can be found on the right panel under active deployments or [here](https://programmers-from-the-same-company.github.io/company-website/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To start development:
+1) Create a branch BASED of master
+2) Pick or create a ticket in the ToDo project and move it to in progress
+3) Ensure you have an up to date version of Node.js installed. See [Here](https://nodejs.org/en/)
+4) Make changes locally (you may need to ```yarn install``` the first time I am not sure)
+5) Commit and Push your branch to the repo.
+6) Create a pr to master.
+7) Wait for a review and resolve conversations. You may want to assign reviewers to your pr, you can always assign me ted-marozzi.
+8) Squash and merge to master.
 
+You won't see your changes in the deployment until an admin deploys, we will be changing that soon to deploy on push to master.
+
+Note: If you are new to git, I recommend installing [Github Desktop](https://desktop.github.com/)
 ## Available Scripts
 
 In the project directory, you can run:
@@ -28,16 +42,6 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
 
