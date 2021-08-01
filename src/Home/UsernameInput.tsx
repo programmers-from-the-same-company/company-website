@@ -5,8 +5,8 @@ function UsernameInput() {
     const [apiResponse, setApiResponse] = useState("");
     const [currentMembers, setCurrentMembers] = useState([]);
     const [pendingMembers, setPendingMembers] = useState([]);
-    const apiEndpoint = "https://nameless-meadow-90439.herokuapp.com/";
 
+    const apiEndpoint = "https://company-website-api.herokuapp.com/";
     const sendInvitation = async () => {
         // Call our api to send invitation to user.
         // Set api response
