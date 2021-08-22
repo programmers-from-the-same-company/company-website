@@ -14,7 +14,7 @@ To start development:
 8) Squash and merge to master.
 
 You won't see your changes in the deployment until an admin deploys, we will be changing that soon to deploy on push to master.
-
+### 🍌
 Note: If you are new to git, I recommend installing [Github Desktop](https://desktop.github.com/)
 ## Available Scripts
 
