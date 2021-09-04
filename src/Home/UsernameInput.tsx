@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from 'react-loader-spinner';
 
 function UsernameInput() {
     const [username, setUsername] = useState("");
     const [apiResponse, setApiResponse] = useState("");
     const [currentMembers, setCurrentMembers] = useState([]);
     const [pendingMembers, setPendingMembers] = useState([]);
+    const [isLoading, setIsLoading] = useState(true)
 
     const apiEndpoint = "https://company-website-api.herokuapp.com/";
     const sendInvitation = async () => {
@@ -32,6 +35,7 @@ function UsernameInput() {
         }).then((json) => {
             setCurrentMembers(json.active.map(extractUsername));
             setPendingMembers(json.pending.map(extractUsername));
+            setIsLoading(false)
         }).catch((error) => console.error(error));
     }
 
@@ -40,6 +44,10 @@ function UsernameInput() {
         // Call api to get current members and pending members and set state
         getMembers();
     }, [apiResponse]);
+
+    const SpinnerComponent = (
+        <Loader type="Circles" color="#00BFFF" height={80} width={80}/>
+    )
 
     return (
         <div className="container text-center">
@@ -65,16 +73,26 @@ function UsernameInput() {
             <div className= "m-2">Click this <a href="https://github.com/programmers-from-the-same-company">link</a> or check your email to accept.</div>
             <div className="row m-5">
                 <div className="col text-center">
-                    <h2>Current Members</h2>
-                    <ul className="list-unstyled">
-                        {currentMembers.map(makeListItem)}
-                    </ul>
+                    <h2>Pending Invitations</h2>
+                    {
+                        isLoading ? SpinnerComponent : 
+                        (
+                            <ul className="list-unstyled">
+                                {pendingMembers.map(makeListItem)}                     
+                            </ul> 
+                        )
+                    }
                 </div>
                 <div className="col text-center">
-                    <h2>Pending Invitations</h2>
-                    <ul className="list-unstyled">
-                        {pendingMembers.map(makeListItem)}
-                    </ul>
+                    <h2>Current Members</h2>
+                    {
+                        isLoading ? SpinnerComponent : 
+                        (
+                            <ul className="list-unstyled">
+                                {currentMembers.map(makeListItem)}
+                            </ul>
+                        )
+                    }
                 </div>
             </div>
         </div>
