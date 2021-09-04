@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import Loader from 'react-loader-spinner';
 
 function UsernameInput() {
     const [username, setUsername] = useState("");
@@ -46,7 +44,7 @@ function UsernameInput() {
     }, [apiResponse]);
 
     const SpinnerComponent = (
-        <Loader type="Circles" color="#00BFFF" height={80} width={80}/>
+        <div className="spinner-grow" role="status"/>
     )
 
     return (
