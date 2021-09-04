@@ -16,8 +16,11 @@ function UsernameInput() {
             method: "POST",
             body: JSON.stringify({ Login: username })
         }).then(
-            (res) => setApiResponse(
-                "Hey " + username + " here is your api response: " + res.status + " " + res.statusText)
+            (res) => {
+                const salutation = !username || username === "" ? "Hey" : "Hey " + username;
+                setApiResponse(
+                    salutation + ", here is your api response: " + res.status + " " + res.statusText)
+            }
         ).catch(
             (error) => console.error(error)
         );
@@ -80,7 +83,7 @@ function UsernameInput() {
             <div className= "m-2">Click this <a href="https://github.com/programmers-from-the-same-company">link</a> or check your email to accept.</div>
 
             <div className="container my-4">
-                <h2>Search for a User:</h2>
+                <h2>Search for a username</h2>
                 <input
                     type="text"
                     value={search}
