@@ -1,5 +1,6 @@
 import React from 'react';
 import UsernameInput from './UsernameInput';
+import JokeQuote from './JokeQuote';
 
 function Home() {
   return (
@@ -9,6 +10,9 @@ function Home() {
           A group where we all pretend to be programmers
            from the same company
         </h1>
+        <h3 className="text-center fst-italic">
+          <JokeQuote />
+        </h3>
       </header>
       <div className="row align-self-center">
           <UsernameInput/>
