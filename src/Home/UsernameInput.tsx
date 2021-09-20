@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import SpinnerComponent from '../Global/GlobalComponents';
 
 function UsernameInput() {
     const [username, setUsername] = useState("");
@@ -51,15 +52,12 @@ function UsernameInput() {
         getMembers();
     }, [apiResponse]);
 
-    const SpinnerComponent = (
-        <div className="spinner-grow" role="status"/>
-    )
 
     const filterFunction = (member: string) => (search !== ""? member.toUpperCase().includes(search.toUpperCase()): true)
 
     return (
         <div className="container text-center">
-            <h2 className="m-2">
+            <h2 className="">
                 Enter your github username
             </h2>
 
