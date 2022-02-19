@@ -33,7 +33,7 @@ function JokeQuote() {
 		return Math.floor(Math.random() * (max - min) + min);
 	}
 
-	const getRandomSmarty =  React.useCallback(() => {
+	const getRandomSmarty = React.useCallback(() => {
 		return SmartPeople[getRandomInt(0, SmartPeople.length)];
 	}, []);
 
